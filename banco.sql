@@ -32,7 +32,7 @@ FOREIGN KEY (cd_professor) REFERENCES tb_professores(cd_professor),
 FOREIGN KEY (cd_materia) REFERENCES tb_materias(cd_materia)
 );
 
-/* INSERT INTO tb_alunos (ds_rm, nm_aluno, ds_email) VALUES
+INSERT INTO tb_alunos (ds_rm, nm_aluno, ds_email) VALUES
 (25099, 'Brenno', 'brenno@gmail.com'),
 (25072, 'Dandara', 'dandaranavarro2@gmail.com'),
 (25130, 'Nicollas', 'nicollas.mello01@aluno.cps.sp.gov.br'),
@@ -97,7 +97,7 @@ FOREIGN KEY (cd_materia) REFERENCES tb_materias(cd_materia)
 
 INSERT INTO tb_professores_materias (cd_professor, cd_materia) VALUES
 -- Meire = Língua Portuguesa
-(8, 1),
+(9, 1),
 -- Patricia = Língua Inglesa
 (11, 2),
 -- Willians = Educação Física
@@ -114,6 +114,8 @@ INSERT INTO tb_professores_materias (cd_professor, cd_materia) VALUES
 (5, 8),
 -- Rodrigo = Geografia
 (12, 9),
+-- Dimorie = Ética
+(4, 13),
 -- Matheus + Oswaldo = Programação Web II
 (8, 10),
 (10, 10),
@@ -123,8 +125,6 @@ INSERT INTO tb_professores_materias (cd_professor, cd_materia) VALUES
 -- Matheus + Oswaldo = Desenvolvimento de Sistemas
 (8, 12),
 (10, 12),
--- Dimorie = Ética
-(4, 13),
 -- Matheus + Augusto = Mobile I
 (8, 14),
 (1, 14);
